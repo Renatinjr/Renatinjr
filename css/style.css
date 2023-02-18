@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.hidden {
+  display: none;
+}
+
+.mobile--hidden {
+  z-index: -3 !important;
+  height: 0% !important;
+}
+
+.mobile-menu--logo {
+  position: relative;
+  z-index: 4;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.heading--primary {
+  font-size: clamp(2.8rem, 4rem + 1.6vw, 7rem);
+  margin-bottom: 0.7rem;
+}
+
+.heading--secoundary {
+  font-size: clamp(1.4rem, 1.6rem + 1vw, 1.8rem);
+  letter-spacing: 0.1rem;
+  color: #616a6b;
+  margin-bottom: 0.7rem;
+}
+
+.heading--info {
+  font-size: clamp(1.2rem, 1.3rem + 1vw, 1.6rem);
+  letter-spacing: 0.1rem;
+  color: #616a6b;
+  margin-bottom: 0.7rem;
+}
+
+.price {
+  font-size: clamp(1rem, 1.2rem + 1vw, 1.5rem);
+  margin-bottom: 0.7rem;
+}
+
+.header {
+  width: calc(100vw - 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: calc(8rem + 1.2vw);
+  height: auto;
+  padding-top: 0.5rem;
+}
+.header__navegation {
+  max-width: 45%;
+}
+.header__navegation__links {
+  display: flex;
+  justify-content: space-between;
+}
+.header__navegation__links li {
+  list-style: none;
+}
+.header__navegation__links li a:link,
+.header__navegation__links li a:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #616a6b;
+}
+.header__mobile-menu-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.6s ease;
+}
+.header__mobile-menu-wrapper__navegation {
+  width: auto;
+}
+.header__mobile-menu-wrapper__navegation__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__mobile-menu-wrapper__navegation__links li {
+  list-style: none;
+}
+.header__mobile-menu-wrapper__navegation__links :not(:last-child) {
+  margin-bottom: 1.9rem;
+}
+.header__mobile-menu-wrapper__navegation__links a:link,
+.header__mobile-menu-wrapper__navegation__links a:visited {
+  font-size: 2.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (max-width: 45rem) {
+  .header__navegation {
+    display: none;
+  }
+}
+.main {
+  display: flex;
+  width: calc(100vw - 5rem);
+  align-self: center;
+}
+.main__description-side {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+.main__description-side__color-bar {
+  width: 1rem;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #ff689c, #ff685d);
+  margin-right: 2rem;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__btn-menu-wrapper {
+  width: calc(3rem + 1vw);
+  transition: all 0.5s ease-in-out;
+}
+
+.header__btn-menu-wrapper__btn-close {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 3vh;
+  right: 2rem;
+  height: 3rem;
+  width: calc(3rem + 1vw);
+  cursor: pointer;
+}
+.header__btn-menu-wrapper__btn-close :first-child {
+  position: absolute;
+  transform: rotate(45deg);
+  width: 3rem;
+  height: 0.3rem;
+  display: block;
+  background-color: #fff;
+  transition: all 0.6s ease;
+}
+.header__btn-menu-wrapper__btn-close :last-child {
+  position: absolute;
+  width: 3rem;
+  height: 0.3rem;
+  display: block;
+  background-color: #fff;
+  transform: rotate(-50deg);
+  transition: all 0.6s ease;
+}
+
+.main__description-side__btn {
+  background-image: linear-gradient(to right, #ff689c, #ff685d);
+  width: calc(25% + 1vw);
+  height: 4rem;
+  border-radius: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
