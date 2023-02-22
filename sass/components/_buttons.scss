@@ -5,8 +5,8 @@
 }
 
 .header__btn-menu-wrapper {
+  display: none;
   width: calc(3rem + 1vw);
-  transition: all 0.5s ease-in-out;
 }
 .header__btn-menu-wrapper__btn-close {
   position: absolute;

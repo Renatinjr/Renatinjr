@@ -9,11 +9,11 @@ body {
 }
 
 .heading--primary {
-  font-size: clamp(2.8rem, 4rem + 1vw, 7rem);
+  font-size: clamp(2.5rem, 5rem + 2vw, 6rem + 1vw);
   margin-bottom: 1rem;
 }
 .heading--secoundary {
-  font-size: clamp(1.3rem, 1.5rem, 1.7rem);
+  font-size: clamp(1.3rem, 1.5rem + 1vw, 1.8rem);
   letter-spacing: 0.1rem;
   color: $color--secoudary;
   margin-bottom: 0.7rem;
