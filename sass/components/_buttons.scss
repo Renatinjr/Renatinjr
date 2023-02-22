@@ -1,0 +1,63 @@
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__btn-menu-wrapper {
+  width: calc(3rem + 1vw);
+  transition: all 0.5s ease-in-out;
+}
+.header__btn-menu-wrapper__btn-close {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 3vh;
+  right: 2rem;
+  height: 3rem;
+  width: calc(3rem + 1vw);
+  cursor: pointer;
+
+  :first-child {
+    position: absolute;
+    transform: rotate(45deg);
+    width: 3rem;
+    height: 0.3rem;
+    display: block;
+    background-color: #fff;
+    transition: all 0.6s ease;
+  }
+  :last-child {
+    position: absolute;
+    width: 3rem;
+    height: 0.3rem;
+    display: block;
+    background-color: #fff;
+    transform: rotate(-50deg);
+    transition: all 0.6s ease;
+  }
+}
+
+.main__description-side__btn {
+  background-image: linear-gradient(
+    to right,
+    $color--primary,
+    $color--tertiary
+  );
+
+  width: calc(25% + 1vw);
+  height: 4rem;
+  border-radius: 0.5rem;
+}
+
+.main__controller-side__btn-add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+
+  :first-child {
+    width: calc(3vw + 1rem);
+    margin-bottom: 0.5rem;
+  }
+}

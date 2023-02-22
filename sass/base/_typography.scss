@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.heading--primary {
+  font-size: clamp(2.8rem, 4rem + 1vw, 7rem);
+  margin-bottom: 1rem;
+}
+.heading--secoundary {
+  font-size: clamp(1.3rem, 1.5rem, 1.7rem);
+  letter-spacing: 0.1rem;
+  color: $color--secoudary;
+  margin-bottom: 0.7rem;
+}
+.heading--info {
+  font-size: clamp(1.2rem, 1.3rem + 1vw, 1.6rem);
+  letter-spacing: 0.1rem;
+  color: $color--secoudary;
+  margin-bottom: 0.7rem;
+}
+
+.price {
+  font-size: clamp(1rem, 1.2rem + 1vw, 1.5rem);
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Index</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="header__logo mobile-menu--logo">
+          <img src="img/logo.png" alt="logo" />
+        </div>
+
+        <nav class="header__navegation">
+          <ul class="header__navegation__links">
+            <li><a href="">Game Controllers</a></li>
+            <li><a href="">Vr Acessories</a></li>
+            <li><a href="">Media Remotes</a></li>
+            <li><a href="">Others</a></li>
+          </ul>
+        </nav>
+
+        <button class="btn header__btn-menu-wrapper">
+          <img src="img/menu.png" alt="" />
+        </button>
+        <div class="mobile--hidden header__mobile-menu-wrapper">
+          <button class="btn btn--close header__btn-menu-wrapper__btn-close">
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="header__mobile-menu-wrapper__navegation">
+            <ul class="header__mobile-menu-wrapper__navegation__links">
+              <li><a href="">Game Controllers</a></li>
+              <li><a href="">Vr Acessories</a></li>
+              <li><a href="">Media Remotes</a></li>
+              <li><a href="">Others</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="main__description-side">
+          <div class="main__description-side__text">
+            <h1 class="heading--primary">
+              <span>PS$ V2</span> <span>Dualshock 4</span>
+            </h1>
+            <h3 class="heading--secoundary">
+              Wireless Controller for PlayStation 4
+            </h3>
+            <h5 class="heading--info">(Compatible/Generic)</h5>
+          </div>
+          <h4 class="price">$32.50</h4>
+          <button class="btn main__description-side__btn">Buy Now</button>
+        </section>
+        <section class="main__controller-side">
+          <div class="bg-controller"></div>
+          <img src="img/controller.png" alt="controller" />
+          <button class="btn btn--add main__controller-side__btn-add">
+            <img src="img/add.png" alt=" add" />
+            <span>Add to card</span>
+          </button>
+        </section>
+      </main>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
